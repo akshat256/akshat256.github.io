@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>International-Debt-Analysis</title>
+    <title>Image Classification from scratch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
@@ -39,24 +39,24 @@
 	</div>
 
 	<div class="main-container">
-		<br>
+		<h3>Image Classification from scratch</h3>
 
-		
-		
-		<h3>International Debt Analysis</h3>
-
-		<p>It's not that we humans only take debts to manage our necessities. A country may also take debt to manage its economy. 
-            For example, infrastructure spending is one costly ingredient required for a country's citizens to lead comfortable lives.
-		<br>
-		<br>
-		In this Project, I analyzed international debt data collected by The World Bank. The dataset contains information about the amount
-         of debt (in USD) owed by developing countries across several categories. We are going to find the answers to questions like:
-		<br>
-		<ul style="list-style-type: circle;">
-            <li>What is the total amount of debt that is owed by the countries listed in the dataset?</li>
-            <li>Which country owns the maximum amount of debt and what does that amount look like?</li>
-            <li>What is the average amount of debt owed by countries across different debt indicators?</li>
-        </ul>
+		<p>For this project, I created an image classifier from scratch using the Cats vs Dogs dataset from Kaggle. 
+			This dataset consists of thousands of images of cats and dogs, labeled accordingly.
+		</p>
+			<p>
+		To ensure the accuracy of my model, I split the dataset into training and validation sets. The validation
+		 set was used to evaluate the performance of the model during training, helping to prevent overfitting.
+		</p>
+		 <p>
+		The core of my model was a Convolutional Neural Network (CNN), a type of deep learning model well-suited for image 
+		classification tasks. The CNN architecture included four Conv2D layers, each followed 
+		by a MaxPooling layer to reduce the spatial dimensions of the input. This was followed by two dense layers for the final output.
+		</p>
+		<p>
+		To avoid overfitting the model to the training data, I used the image data generator technique. This technique generates augmented
+		 images by applying random transformations such as rotation, scaling, and flipping to the original images. This helps the model 
+		 generalize better to new, unseen images.
 		</p>
         
 	
@@ -66,21 +66,25 @@
         </p>
         
 		<br>
-		<a href="https://github.com/akshat256/International-Debt-Analysis" download>Source Code</a>
-        <br>
-		<a href="downloads/international_debt.csv" download>Download Dataset</a>
+		<a href="https://github.com/akshat256/ImageClassification-of-Cats-and-Dogs" download>Source Code</a>
 		
 
 		<h5>Technologies:</h5>
 		<ul>
-			<li>- PostgreSql</li>
 			<li>- Python</li>
-			<li>- Data Analysis</li>
-			<li>- Jupyter Notebook</li>
-			<li>- SQL</li>
-			<li>- RDBMS</li>
+			<li>- DeepLearning</li>
+			<li>- CNN</li>
+			<li>- Google Collab</li>
+			<li>- Keras</li>
+			<li>- Tensorflow</li>
+			<li>- OpenCV</li>
+			<li>- Data Augmentation</li>
 		</ul>
 
+		<h5>Prediction</h5>
+		<div class="img-container" style="height: 700px; width: 1000px;">
+			<img src="images/cat.png">
+		</div>
 
 		<script type="text/javascript" src="posts.js"></script> 
 		
